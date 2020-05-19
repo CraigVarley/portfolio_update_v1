@@ -130,6 +130,11 @@ ul.skills {
   background: #0399ff;
 }
 
+. experience-pics {
+  padding:0px;
+  margin:0px;
+}
+
 footer {
   width: 100%;
   min-height: 30px;
@@ -177,6 +182,38 @@ a.social:hover {
   clear: both;
 }
 
+.experience-pics {
+  width:400px;
+  border-radius: 10%;
+  margin-bottom: 20px;
+}
+
+.exp-content {
+  margin-top:0px;
+}
+
+.experience-cap {
+  margin-top:-5px;
+}
+
+.exp-library  {
+  float:left;
+  margin:10px;
+  margin-top:50px;
+  margin-left:200px;
+  border:2px solid black;
+  border-radius: 5%;
+}
+
+.exp-academic  {
+  float:right;
+  margin:10px;
+  margin-top:50px;
+  margin-right:200px;
+  border:2px solid black;
+  border-radius: 5%;
+}
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
@@ -189,8 +226,12 @@ a.social:hover {
       margin: 0 auto;
   }
 
-  header {
+  header .index {
     min-height: 470px;
+  }
+
+  header .experience {
+    height:200px;
   }
 
   .nav {
