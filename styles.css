@@ -68,7 +68,6 @@ a:hover {
   text-align: center;
   background: url('images/narrowblueridge.jpg') no-repeat top center ;
   background-size: 100%;
-  overflow: hidden;
   padding-top: 0px;
 }
 
@@ -130,11 +129,6 @@ ul.skills {
   background: #0399ff;
 }
 
-. experience-pics {
-  padding:0px;
-  margin:0px;
-}
-
 footer {
   width: 100%;
   min-height: 30px;
@@ -183,35 +177,55 @@ a.social:hover {
 }
 
 .experience-pics {
-  width:400px;
-  border-radius: 10%;
+  padding:0px;
+  margin:0px;
+  max-width: 400px;
+  border-radius: 5%;
   margin-bottom: 20px;
 }
 
 .exp-content {
   margin-top:0px;
+  font:Montserrat;
 }
+
+.exp-content h2 {
+  margin:5px;
+  margin-left:20px;
+  font-family:'Archivo Black', sans-serif;
+  font-size:40px;
+  font-weight: 100;
+  text-align:center;
+}
+
+ .exp-content img {
+  text-align:left;
+ }
 
 .experience-cap {
   margin-top:-5px;
 }
 
 .exp-library  {
-  float:left;
+  font-family:sans-serif;
   margin:10px;
   margin-top:50px;
-  margin-left:200px;
-  border:2px solid black;
+  /* margin-left:150px; */
+  border:2px solid white;
+  width: 600px;
   border-radius: 5%;
+  background-color: #fff;
 }
 
 .exp-academic  {
-  float:right;
+  font-family:sans-serif;
   margin:10px;
   margin-top:50px;
-  margin-right:200px;
-  border:2px solid black;
+  /* margin-right:150px; */
+  width:600px;
+  border:2px solid white;
   border-radius: 5%;
+  background-color:#fff;
 }
 
 /* Styles for larger screens */
