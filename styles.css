@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #222;
   background: #f7f5f0;
 }
@@ -63,17 +63,10 @@ a:hover {
   padding-top: 0px;
 }
 
-
-.experience {
-  text-align: center;
-  background: url('images/narrowblueridge.jpg') no-repeat top center ;
-  background-size: 100%;
-  padding-top: 0px;
-}
-
 header {
   line-height: 1.5;
 }
+
 header .profile-image {
   margin-top: 80px;
   width: 150px;
@@ -81,11 +74,13 @@ header .profile-image {
   border-radius: 50%;
   border: 3px solid white;
   transition: all .5s;
+  margin-bottom: 20px;
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
-.tag {
+
+header .tag {
   background-color: #efefef;
   color: black;
   padding: 10px;
@@ -103,12 +98,12 @@ header .profile-image:hover {
   max-width: 500px;
   text-align: left;
   background: #fff;
-  border-bottom: 4px solid #ccc;
+  border-bottom: 2px solid #5C81AD;
   border-radius: 6px;
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color:black;
 }
 
 ul.skills {
@@ -119,14 +114,10 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background:#5C81AD;
   color: white;
   padding: 5px 10px;
   margin: 2px;
-}
-
-.skills li:nth-child(odd) {
-  background: #0399ff;
 }
 
 footer {
@@ -176,6 +167,12 @@ a.social:hover {
   clear: both;
 }
 
+/* Experience page styles */
+
+section {
+  margin-top:75px;
+}
+
 .experience-pics {
   padding:0px;
   margin:0px;
@@ -186,26 +183,26 @@ a.social:hover {
 
 .exp-content {
   margin-top:0px;
-  font:Montserrat;
+  font-family:'Open Sans', sans-serif;
 }
 
-.exp-content h2 {
+.exp-content h1 {
   margin-top:0px;
-  margin-bottom:0px;
+  margin-bottom:10px;
   margin-left:auto;
   margin-right:auto;
-  font-family:'Archivo Black', sans-serif;
-  font-size:40px;
-  font-weight: 100;}
+  font-family:'Open Sans', sans-serif;
+  font-size:30px;
+  font-weight: 50;}
 
-  .exp-content h3 {
+.exp-content h2 {
   margin-bottom: 0px;
-  text-transform: uppercase;
+  font-size: 20px;
+  font-family:'Open Sans', sans-serif;
   }
 
 .experience-cap {
   margin-top:0px;
-  font-weight: bold;
 }
 
 figure {
@@ -214,19 +211,7 @@ figure {
   margin-right:auto;
 }
 
-.exp-library  {
-  font-family:sans-serif;
-  margin-bottom:10px;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:5px;
-  border:2px solid white;
-  width: 500px;
-  border-radius: 5%;
-  background-color: #fff;
-}
-
-.exp-academic  {
+.exp-job  {
   font-family:sans-serif;
   margin-bottom:10px;
   margin-left:auto;
@@ -236,6 +221,7 @@ figure {
   border:2px solid white;
   border-radius: 5%;
   background-color:#fff;
+  border-bottom: 1px solid #5C81AD;
 }
 
 /* Styles for larger screens */
