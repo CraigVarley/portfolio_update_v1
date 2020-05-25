@@ -18,7 +18,7 @@ a {
   color: #999;
 }
 a:hover {
-  color: #6633ff;
+  color:black;
 }
 
 /* Section Styles */
@@ -55,9 +55,17 @@ a:hover {
   color: white
 }
 
+
 .index {
   text-align: center;
   background: url('images/rszblueridge.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 0px;
+}
+
+.index-notindex {
+  text-align: center;
   background-size: cover;
   overflow: hidden;
   padding-top: 0px;
@@ -77,7 +85,8 @@ header .profile-image {
   margin-bottom: 20px;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.05);
+  border:2px black solid;
 }
 
 header .tag {
@@ -92,7 +101,8 @@ header .tag {
   background-color: #222;
   color: yellow;
 }
-.card {
+
+.skills-box {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
@@ -102,13 +112,29 @@ header .tag {
   border-radius: 6px;
   transition: all .5s;
 }
-.card:hover {
+
+.bio {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 2px solid #5C81AD;
+  border-radius: 6px;
+  transition: all .5s;
+} 
+
+.bio:hover, .skills-box:hover{
   border-color:black;
 }
 
+/* added max width and margins to center and align */
 ul.skills {
   padding: 0;
   text-align: center;
+  max-width:350px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .skills li {
@@ -170,7 +196,7 @@ a.social:hover {
 /* Experience page styles */
 
 section {
-  margin-top:75px;
+  margin-top:10px;
 }
 
 .experience-pics {
@@ -186,16 +212,16 @@ section {
   font-family:'Open Sans', sans-serif;
 }
 
-.exp-content h1 {
+h1 {
   margin-top:0px;
   margin-bottom:10px;
   margin-left:auto;
   margin-right:auto;
   font-family:'Open Sans', sans-serif;
   font-size:30px;
-  font-weight: 50;}
+  font-weight: 30;}
 
-.exp-content h2 {
+h2 {
   margin-bottom: 0px;
   font-size: 20px;
   font-family:'Open Sans', sans-serif;
@@ -212,7 +238,7 @@ figure {
 }
 
 .exp-job  {
-  font-family:sans-serif;
+  font-family:'Open Sans', sans-serif;
   margin-bottom:10px;
   margin-left:auto;
   margin-right: auto;
@@ -224,14 +250,48 @@ figure {
   border-bottom: 1px solid #5C81AD;
 }
 
+.index img {
+  background-repeat: no-repeat;
+}
+
+/* Contact form styles */
+
+.contact {
+  margin-top:40px;
+  border:1px #5C81AD solid;
+  width:200px;
+  height:200px;
+  padding:10px;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius: 50%;
+  background-color:white;
+}
+
+.contact a {
+  color:black;
+  margin-bottom: 100px;
+}
+
+.contact:hover {
+  background-color: #5C81AD;
+}
+
+.contact:hover a {
+  color:white;
+}
+.contact h2 {
+  margin-top:50px;
+  font-size: 25px;
+}
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
   .flex {
-      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: -ms-flexbox;      /* TWEENER - IE 10 */ /* w3 validator says this 'vendor extension' is invalid?*/
       display: flex; 
       max-width: 1200px;
-      -ms-flex-pack: distribute;
+      -ms-flex-pack: distribute; /* w3 validator says this 'vendor extension' is invalid?*/
       justify-content: space-around;
       margin: 0 auto;
   }
