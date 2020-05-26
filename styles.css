@@ -192,6 +192,10 @@ a.social:hover {
   clear: both;
 }
 
+.bio a:hover {
+  border-bottom:2px solid black;
+}
+
 /* Experience page styles */
 
 section {
